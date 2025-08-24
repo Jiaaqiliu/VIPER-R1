@@ -5,10 +5,10 @@
 ### A VLM-centric Approach for Physics Formula Discovery
 
 [![arXiv](https://img.shields.io/badge/arXiv-2025.XXXXX-b31b1b.svg)](https://arxiv.org/abs/2025.XXXXX)
-[![Project Page](https://img.shields.io/badge/Project-Page-green)](https://VIPER-r1.github.io/)
+[![Project Page](https://img.shields.io/badge/Project-Page-green)](https://jiaaqiliu.github.io/VIPER-R1/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-[**📄 Paper**](https://arxiv.org/abs/2025.XXXXX) | [**🌐 Project Page**](https://VIPER-r1.github.io/) | [**🤗 Dataset**](#-dataset) | [**💻 Code**](#-code)
+[**📄 Paper**](https://arxiv.org/abs/2025.XXXXX) | [**🌐 Project Page**](https://jiaaqiliu.github.io/VIPER-R1/) | [**🤗 Dataset**](#-dataset) | [**💻 Code**](#-code)
 
 </div>
 
@@ -16,7 +16,7 @@
 
 Automated discovery of physical laws from observational data is a grand challenge in AI. Current methods, relying on symbolic regression or LLMs, are limited to uni-modal data and overlook the rich, visual phenomenological representations of motion that are indispensable to physicists. This "sensory deprivation" severely weakens their ability to interpret the inherent spatio-temporal patterns within dynamic phenomena.
 
-To address this gap, we propose the VLM-based **Physics Reasoning and Inductive Synthesis Model (VIPER-R1)**, a multimodal framework that discovers fundamental symbolic formulas by methodically integrating visual perception, trajectory data, and symbolic reasoning through a process of inductive synthesis.
+To address this gap, we propose VIPER-R1, a multimodal model that performs Visual Induction for Physics-based Equation Reasoning to discover fundamental symbolic formulas. It methodically integrates visual perception, trajectory data, and symbolic reasoning to simulate the scientific discovery process.
 
 The model is trained via a curriculum of Motion Structure Induction (MSI), using supervised fine-tuning to interpret kinematic phase portraits and construct hypotheses guided by a Causal Chain of Thought (C-CoT), followed by Reward-Guided Symbolic Calibration (RGSC) to purify the formula's structure with reinforcement learning. During inference, the trained VIPER acts as an agent: it first posits a high-confidence symbolic ansatz, then proactively invokes an external symbolic regression tool to perform Symbolic Residual Realignment (SR²). This final step, analogous to a physicist's perturbation analysis, reconciles the theoretical model with empirical data.
 
@@ -70,21 +70,10 @@ VIPER-R1 consists of three main stages:
 
 ## 🔜 Todo List
 
-- [ ] **📝 Paper Release**: ArXiv publication (Expected: Q1 2025)
-- [ ] **💻 Code Release**: Complete training and inference pipeline
-  - [ ] MSI training scripts
-  - [ ] RGSC implementation with GRPO
-  - [ ] SR² agentic framework
-  - [ ] Evaluation benchmarks
+- [ ] **📝 Paper Release**
+- [ ] **💻 Code Release**
 - [ ] **📊 Dataset Release**: PhysSymbol multimodal corpus
-  - [ ] 5,000 annotated instances
-  - [ ] Phase portrait visualizations
-  - [ ] Trajectory data and symbolic equations
-  - [ ] Data loading and preprocessing tools
 - [ ] **🔧 Model Checkpoints**: Pre-trained VIPER-R1 weights
-- [ ] **📚 Documentation**: Detailed usage tutorials and API docs
-- [ ] **🧪 Demo**: Interactive online demonstration
-- [ ] **🐳 Docker**: Containerized environment for easy setup
 
 <!-- ## 🎯 Quick Start
 
