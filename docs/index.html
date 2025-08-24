@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRISM-R1: Mimicking the Physicist's Eye</title>
+    <title>VIPER-R1: Mimicking the Physicist's Eye</title>
     <script>
         // Set base URL for GitHub Pages
         if (window.location.hostname === 'jiaaqiliu.github.io') {
-            document.write('<base href="/PRISM-R1/">');
+            document.write('<base href="/VIPER-R1/">');
         }
     </script>
     <link rel="stylesheet" href="assets/css/style.css">
@@ -20,7 +20,7 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-brand">PRISM-R1</div>
+            <div class="nav-brand">VIPER-R1</div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#abstract" class="nav-link">Abstract</a></li>
@@ -57,7 +57,7 @@
                 </div>
 
                 <div class="hero-image">
-                    <img src="assets/images/Fig_overall.png" alt="PRISM-R1 Framework Overview" class="framework-img">
+                    <img src="assets/images/Fig_overall.png" alt="VIPER-R1 Framework Overview" class="framework-img">
                 </div>
 
                 <div class="hero-buttons">
@@ -84,18 +84,18 @@
                     Automated discovery of physical laws from observational data is a grand challenge in AI. Current methods, relying on symbolic regression or LLMs, are limited to uni-modal data and overlook the rich, visual phenomenological representations of motion that are indispensable to physicists. This "sensory deprivation" severely weakens their ability to interpret the inherent spatio-temporal patterns within dynamic phenomena.
                 </p>
                 <p>
-                    To address this gap, we propose the VLM-based <strong>Physics Reasoning and Inductive Synthesis Model (PRISM-R1)</strong>, a multimodal framework that discovers fundamental symbolic formulas by methodically integrating visual perception, trajectory data, and symbolic reasoning through a process of inductive synthesis.
+                    To address this gap, we propose the VLM-based <strong>Physics Reasoning and Inductive Synthesis Model (VIPER-R1)</strong>, a multimodal framework that discovers fundamental symbolic formulas by methodically integrating visual perception, trajectory data, and symbolic reasoning through a process of inductive synthesis.
                 </p>
                 <p>
-                    The model is trained via a curriculum of Motion Structure Induction (MSI), using supervised fine-tuning to interpret kinematic phase portraits and construct hypotheses guided by a Causal Chain of Thought (C-CoT), followed by Reward-Guided Symbolic Calibration (RGSC) to purify the formula's structure with reinforcement learning. During inference, the trained PRISM acts as an agent: it first posits a high-confidence symbolic ansatz, then proactively invokes an external symbolic regression tool to perform Symbolic Residual Realignment (SR²). This final step, analogous to a physicist's perturbation analysis, reconciles the theoretical model with empirical data.
+                    The model is trained via a curriculum of Motion Structure Induction (MSI), using supervised fine-tuning to interpret kinematic phase portraits and construct hypotheses guided by a Causal Chain of Thought (C-CoT), followed by Reward-Guided Symbolic Calibration (RGSC) to purify the formula's structure with reinforcement learning. During inference, the trained VIPER acts as an agent: it first posits a high-confidence symbolic ansatz, then proactively invokes an external symbolic regression tool to perform Symbolic Residual Realignment (SR²). This final step, analogous to a physicist's perturbation analysis, reconciles the theoretical model with empirical data.
                 </p>
                 <p>
-                    To support this research, we introduce PhysSymbol, a new 5,000-instance multimodal corpus. Experiments show that PRISM-R1 consistently outperforms state-of-the-art VLM baselines in accuracy and interpretability, enabling more precise discovery of physical laws.
+                    To support this research, we introduce PhysSymbol, a new 5,000-instance multimodal corpus. Experiments show that VIPER-R1 consistently outperforms state-of-the-art VLM baselines in accuracy and interpretability, enabling more precise discovery of physical laws.
                 </p>
                 <div class="key-contributions">
                     <h3>Key Contributions</h3>
                     <ul>
-                        <li>PRISM-R1, a multimodal framework that simulates the scientific reasoning process by integrating visual perception, trajectory data, and symbolic reasoning</li>
+                        <li>VIPER-R1, a multimodal framework that simulates the scientific reasoning process by integrating visual perception, trajectory data, and symbolic reasoning</li>
                         <li>A two-stage training pipeline featuring Motion Structure Induction (MSI) and Reward-Guided Symbolic Calibration (RGSC)</li>
                         <li>An agentic refinement stage, Symbolic Residual Realignment (SR²), where the VLM proactively utilizes external tools to harmonize theoretical hypotheses with empirical data</li>
                         <li>PhysSymbol, a new comprehensive benchmark of 5,000 multimodal instances for physics formula discovery</li>
@@ -111,7 +111,7 @@
             <h2 class="section-title">Methodology</h2>
             <div class="method-overview">
                 <div class="method-image">
-                    <img src="assets/images/fig_vlm_framework.png" alt="PRISM-R1 Framework" class="method-diagram">
+                    <img src="assets/images/fig_vlm_framework.png" alt="VIPER-R1 Framework" class="method-diagram">
                 </div>
                 <div class="method-description">
                     <p>
@@ -185,7 +185,7 @@
                     </div>
                     <div class="stage-content">
                         <p>
-                            Agentic refinement process where PRISM-R1 invokes external symbolic regression tools to correct residual errors:
+                            Agentic refinement process where VIPER-R1 invokes external symbolic regression tools to correct residual errors:
                         </p>
                         <div class="sr2-steps">
                             <div class="sr2-step">
@@ -212,7 +212,7 @@
             <!-- Main Results -->
             <div class="results-section">
                 <h3>Main Results</h3>
-                <p>PRISM-R1 significantly outperforms state-of-the-art VLMs on the PhysSymbol benchmark:</p>
+                <p>VIPER-R1 significantly outperforms state-of-the-art VLMs on the PhysSymbol benchmark:</p>
                 
                 <div class="results-grid">
                     <div class="result-card">
@@ -294,7 +294,7 @@
                 <h3>Complex System: Non-linear Damping with Stochastic Noise</h3>
                 <p>
                     We examine a challenging system governed by <code>a(t) = -kx - cv³ + η(t)</code>, combining linear restoring force, 
-                    non-linear damping, and stochastic noise. This case demonstrates PRISM-R1's ability to identify and integrate 
+                    non-linear damping, and stochastic noise. This case demonstrates VIPER-R1's ability to identify and integrate 
                     components with fundamentally different characteristics.
                 </p>
                 
@@ -326,7 +326,7 @@
                             <div class="equation">a(t) = -1.542x - 2.766v³ + 0.450η(t)</div>
                         </div>
                         <div class="equation-box">
-                            <h5>PRISM-R1 Output</h5>
+                            <h5>VIPER-R1 Output</h5>
                             <div class="equation">a(t) = -1.454x - 2.834v³ + 0.447η(t)</div>
                         </div>
                     </div>
@@ -541,7 +541,7 @@
         <div class="container">
             <h2 class="section-title">Citation</h2>
             <div class="citation-box">
-                <pre><code>@article{liu2025prismr1,
+                <pre><code>@article{liu2025VIPERr1,
   title={Mimicking the Physicist's Eye: A VLM-centric Approach for Physics Formula Discovery},
   author={Liu, Jiaqi and Lai, Songning and Li, Pengze and Yu, Di and Zhou, Wenjie and Zhou, Yiyang and Xia, Peng and Wang, Zijun and Chen, Xi and Tang, Shixiang and Bai, Lei and Ouyang, Wanli and Ding, Mingyu and Yao, Huaxiu and Wang, Aoran},
   journal={arXiv preprint},
@@ -559,7 +559,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>PRISM-R1</h4>
+                    <h4>VIPER-R1</h4>
                     <p>Physics Reasoning and Inductive Synthesis Model for automated physics formula discovery.</p>
                 </div>
                 <div class="footer-section">
@@ -576,7 +576,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 PRISM-R1. All rights reserved.</p>
+                <p>&copy; 2025 VIPER-R1. All rights reserved.</p>
             </div>
         </div>
     </footer>

@@ -1,14 +1,14 @@
-# PRISM-R1: Mimicking the Physicist's Eye
+# VIPER-R1: Mimicking the Physicist's Eye
 
 <div align="center">
 
 ### A VLM-centric Approach for Physics Formula Discovery
 
 [![arXiv](https://img.shields.io/badge/arXiv-2025.XXXXX-b31b1b.svg)](https://arxiv.org/abs/2025.XXXXX)
-[![Project Page](https://img.shields.io/badge/Project-Page-green)](https://prism-r1.github.io/)
+[![Project Page](https://img.shields.io/badge/Project-Page-green)](https://VIPER-r1.github.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-[**📄 Paper**](https://arxiv.org/abs/2025.XXXXX) | [**🌐 Project Page**](https://prism-r1.github.io/) | [**🤗 Dataset**](#-dataset) | [**💻 Code**](#-code)
+[**📄 Paper**](https://arxiv.org/abs/2025.XXXXX) | [**🌐 Project Page**](https://VIPER-r1.github.io/) | [**🤗 Dataset**](#-dataset) | [**💻 Code**](#-code)
 
 </div>
 
@@ -16,11 +16,11 @@
 
 Automated discovery of physical laws from observational data is a grand challenge in AI. Current methods, relying on symbolic regression or LLMs, are limited to uni-modal data and overlook the rich, visual phenomenological representations of motion that are indispensable to physicists. This "sensory deprivation" severely weakens their ability to interpret the inherent spatio-temporal patterns within dynamic phenomena.
 
-To address this gap, we propose the VLM-based **Physics Reasoning and Inductive Synthesis Model (PRISM-R1)**, a multimodal framework that discovers fundamental symbolic formulas by methodically integrating visual perception, trajectory data, and symbolic reasoning through a process of inductive synthesis.
+To address this gap, we propose the VLM-based **Physics Reasoning and Inductive Synthesis Model (VIPER-R1)**, a multimodal framework that discovers fundamental symbolic formulas by methodically integrating visual perception, trajectory data, and symbolic reasoning through a process of inductive synthesis.
 
-The model is trained via a curriculum of Motion Structure Induction (MSI), using supervised fine-tuning to interpret kinematic phase portraits and construct hypotheses guided by a Causal Chain of Thought (C-CoT), followed by Reward-Guided Symbolic Calibration (RGSC) to purify the formula's structure with reinforcement learning. During inference, the trained PRISM acts as an agent: it first posits a high-confidence symbolic ansatz, then proactively invokes an external symbolic regression tool to perform Symbolic Residual Realignment (SR²). This final step, analogous to a physicist's perturbation analysis, reconciles the theoretical model with empirical data.
+The model is trained via a curriculum of Motion Structure Induction (MSI), using supervised fine-tuning to interpret kinematic phase portraits and construct hypotheses guided by a Causal Chain of Thought (C-CoT), followed by Reward-Guided Symbolic Calibration (RGSC) to purify the formula's structure with reinforcement learning. During inference, the trained VIPER acts as an agent: it first posits a high-confidence symbolic ansatz, then proactively invokes an external symbolic regression tool to perform Symbolic Residual Realignment (SR²). This final step, analogous to a physicist's perturbation analysis, reconciles the theoretical model with empirical data.
 
-To support this research, we introduce PhysSymbol, a new 5,000-instance multimodal corpus. Experiments show that PRISM-R1 consistently outperforms state-of-the-art VLM baselines in accuracy and interpretability, enabling more precise discovery of physical laws.
+To support this research, we introduce PhysSymbol, a new 5,000-instance multimodal corpus. Experiments show that VIPER-R1 consistently outperforms state-of-the-art VLM baselines in accuracy and interpretability, enabling more precise discovery of physical laws.
 
 ## 👥 Authors
 
@@ -48,7 +48,7 @@ To support this research, we introduce PhysSymbol, a new 5,000-instance multimod
 
 ## 🚀 Key Results
 
-| Metric | PRISM-R1 | Best Baseline | Improvement |
+| Metric | VIPER-R1 | Best Baseline | Improvement |
 |--------|----------|---------------|-------------|
 | Structural Score | **0.812** | 0.518 | **+56.7%** |
 | Accuracy Score | **0.487** | 0.335 | **+45.4%** |
@@ -57,10 +57,10 @@ To support this research, we introduce PhysSymbol, a new 5,000-instance multimod
 ## 🏗️ Framework Overview
 
 <div align="center">
-<img src="./docs/assets/images/Fig_overall.png" width="90%" alt="PRISM-R1 Framework Overview">
+<img src="./docs/assets/images/Fig_overall.png" width="90%" alt="VIPER-R1 Framework Overview">
 </div>
 
-PRISM-R1 consists of three main stages:
+VIPER-R1 consists of three main stages:
 
 1. **Motion Structure Induction (MSI)**: Two-step supervised fine-tuning for visual interpretation and hypothesis construction
 2. **Reward-Guided Symbolic Calibration (RGSC)**: Reinforcement learning for formula structure refinement
@@ -81,7 +81,7 @@ PRISM-R1 consists of three main stages:
   - [ ] Phase portrait visualizations
   - [ ] Trajectory data and symbolic equations
   - [ ] Data loading and preprocessing tools
-- [ ] **🔧 Model Checkpoints**: Pre-trained PRISM-R1 weights
+- [ ] **🔧 Model Checkpoints**: Pre-trained VIPER-R1 weights
 - [ ] **📚 Documentation**: Detailed usage tutorials and API docs
 - [ ] **🧪 Demo**: Interactive online demonstration
 - [ ] **🐳 Docker**: Containerized environment for easy setup
@@ -91,8 +91,8 @@ PRISM-R1 consists of three main stages:
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/PRISM-R1/PRISM-R1.git
-cd PRISM-R1
+git clone https://github.com/VIPER-R1/VIPER-R1.git
+cd VIPER-R1
 
 # Install dependencies (Coming Soon)
 pip install -r requirements.txt
@@ -107,7 +107,7 @@ python src/training/train_msi.py --config configs/msi_config.yaml
 python src/training/train_rgsc.py --config configs/rgsc_config.yaml
 
 # Stage 3: Full pipeline evaluation
-python src/inference/evaluate.py --model_path checkpoints/prism_r1.pt
+python src/inference/evaluate.py --model_path checkpoints/VIPER_r1.pt
 ```
 
 ### Inference
@@ -136,7 +136,7 @@ The PhysSymbol dataset contains 5,000 multimodal instances for physics formula d
 ## 🏆 Experiments
 
 ### Main Results
-PRISM-R1 demonstrates significant improvements over state-of-the-art VLMs:
+VIPER-R1 demonstrates significant improvements over state-of-the-art VLMs:
 
 - **Claude-4-Sonnet**: 0.518 → **0.812** structural score (+56.7%)
 - **GPT-4V**: 0.335 → **0.487** accuracy score (+45.4%)
@@ -152,7 +152,7 @@ PRISM-R1 demonstrates significant improvements over state-of-the-art VLMs:
 If you find our work useful, please consider citing:
 
 ```bibtex
-@article{liu2025prismr1,
+@article{liu2025VIPERr1,
   title={Mimicking the Physicist's Eye: A VLM-centric Approach for Physics Formula Discovery},
   author={Liu, Jiaqi and Lai, Songning and Li, Pengze and Yu, Di and Zhou, Wenjie and Zhou, Yiyang and Xia, Peng and Wang, Zijun and Chen, Xi and Tang, Shixiang and Bai, Lei and Ouyang, Wanli and Ding, Mingyu and Yao, Huaxiu and Wang, Aoran},
   journal={arXiv preprint arXiv:2025},
