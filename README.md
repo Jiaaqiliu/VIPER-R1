@@ -70,7 +70,7 @@ VIPER-R1 consists of three main stages:
 ## 🔜 Todo List
 
 - ✅ **📝 Paper Release**
-- [  ] **💻 Code Release**
+- [ ] **💻 Code Release**
 - [ ] **📊 Dataset Release**: PhysSymbol multimodal corpus
 - [ ] **🔧 Model Checkpoints**: Pre-trained VIPER-R1 weights
 
