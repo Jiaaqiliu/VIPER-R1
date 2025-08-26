@@ -36,7 +36,6 @@ To support this research, we introduce PhysSymbol, a new 5,000-instance multimod
 ⁸ The Chinese University of Hong Kong  
 ⁹ Shanghai Innovation Institute  
 
-**Contact**: jqliu@cs.unc.edu, wangaoran@pjlab.org.cn
 
 ## 🔥 Highlights
 
@@ -144,7 +143,7 @@ If you find our work useful, please consider citing:
 @article{liu2025VIPERr1,
   title={Mimicking the Physicist's Eye: A VLM-centric Approach for Physics Formula Discovery},
   author={Liu, Jiaqi and Lai, Songning and Li, Pengze and Yu, Di and Zhou, Wenjie and Zhou, Yiyang and Xia, Peng and Wang, Zijun and Chen, Xi and Tang, Shixiang and Bai, Lei and Ouyang, Wanli and Ding, Mingyu and Yao, Huaxiu and Wang, Aoran},
-  journal={arXiv preprint arXiv:2025},
+  journal={arXiv preprint arXiv:2508.17380},
   year={2025}
 }
 ```
