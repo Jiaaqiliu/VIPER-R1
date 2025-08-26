@@ -4,11 +4,11 @@
 
 ### A VLM-centric Approach for Physics Formula Discovery
 
-[![arXiv](https://img.shields.io/badge/arXiv-2025.XXXXX-b31b1b.svg)](https://arxiv.org/abs/2025.XXXXX)
+[![arXiv](https://img.shields.io/badge/arXiv-2508.17380-b31b1b.svg)](https://arxiv.org/abs/2508.17380)
 [![Project Page](https://img.shields.io/badge/Project-Page-green)](https://jiaaqiliu.github.io/VIPER-R1/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-[**📄 Paper**](https://arxiv.org/abs/2025.XXXXX) | [**🌐 Project Page**](https://jiaaqiliu.github.io/VIPER-R1/) | [**🤗 Dataset**](#-dataset) | [**💻 Code**](#-code)
+[**📄 Paper**](https://arxiv.org/abs/2508.17380) | [**🌐 Project Page**](https://jiaaqiliu.github.io/VIPER-R1/) | [**🤗 Dataset**](#-dataset) | [**💻 Code**](https://github.com/Jiaaqiliu/VIPER-R1)
 
 </div>
 
