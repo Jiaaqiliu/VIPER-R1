@@ -69,7 +69,6 @@ logs/
 # Data files
 *.csv
 *.json
-*.png
 *.jpg
 *.jpeg
 *.gif
