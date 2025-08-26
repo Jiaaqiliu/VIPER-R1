@@ -1,7 +1,7 @@
-# GitHub Pages Configuration for PRISM-R1 Project Website
+# GitHub Pages Configuration for VIPER-R1 Project Website
 
 # Site settings
-title: "PRISM-R1: Mimicking the Physicist's Eye"
+title: "VIPER-R1: Mimicking the Physicist's Eye"
 description: "A VLM-centric Approach for Physics Formula Discovery"
 author: "Jiaqi Liu et al."
 email: "jqliu@cs.unc.edu"
@@ -15,12 +15,12 @@ plugins:
   - jekyll-seo-tag
 
 # GitHub Pages specific settings
-github_username: your-username  # Replace with actual GitHub username
-repository: PRISM-R1  # Replace with actual repository name
+github_username: Jiaaqiliu  # Replace with actual GitHub username
+repository: VIPER-R1  # Replace with actual repository name
 
 # Site URL (will be auto-generated for GitHub Pages)
-url: "https://your-username.github.io"  # Replace with your actual GitHub Pages URL
-baseurl: "/PRISM-R1"  # Replace with your repository name
+url: "https://jiaaqiliu.github.io"  # Replace with your actual GitHub Pages URL
+baseurl: "/VIPER-R1"  # Replace with your repository name
 
 # Theme
 theme: minima
@@ -68,7 +68,7 @@ timezone: UTC
 
 # Social media and academic profiles (optional)
 social_links:
-  github: your-username  # Replace with actual GitHub username
+  github: Jiaaqiliu  # Replace with actual GitHub username
   twitter: your-twitter   # Replace with actual Twitter handle (optional)
   linkedin: your-linkedin # Replace with actual LinkedIn profile (optional)
 
@@ -138,6 +138,6 @@ highlights:
 
 # GitHub repository information
 repo:
-  code_url: "https://github.com/PRISM-R1/PRISM-R1"  # Replace with actual repo URL
-  dataset_url: "https://github.com/your-username/PhysSymbol-Dataset"  # Replace with actual dataset URL
-  paper_url: "https://arxiv.org/abs/xxxx.xxxxx"  # Replace with actual arXiv URL when available
+  code_url: "https://github.com/Jiaaqiliu/VIPER-R1"  # Replace with actual repo URL
+  dataset_url: "https://github.com/Jiaaqiliu/PhysSymbol-Dataset"  # Replace with actual dataset URL
+  paper_url: "https://arxiv.org/abs/2508.17380"  # Replace with actual arXiv URL when available
