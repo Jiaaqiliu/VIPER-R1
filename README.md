@@ -127,7 +127,7 @@ The PhysSymbol dataset contains 5,000 multimodal instances for physics formula d
 VIPER-R1 demonstrates significant improvements over state-of-the-art VLMs:
 
 - **Claude-4-Sonnet**: 0.518 → **0.812** structural score (+56.7%)
-- **GPT-4V**: 0.335 → **0.487** accuracy score (+45.4%)
+- **o3**: 0.335 → **0.487** accuracy score (+45.4%)
 - **Final MSE**: 3× reduction in prediction error after SR²
 
 ### Ablation Studies
