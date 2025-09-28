@@ -215,7 +215,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     externalLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            if (this.href === '#' || this.href.includes('github') || this.href.includes('dataset')) {
+            if (this.href === '#') {
                 e.preventDefault();
                 // Show coming soon message
                 showNotification('Resource will be available upon paper acceptance', 'info');
