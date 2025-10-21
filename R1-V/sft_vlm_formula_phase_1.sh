@@ -11,10 +11,10 @@ torchrun --nproc_per_node="8" \
     --master_addr="127.0.0.1" \
     --master_port="12345" \
     src/open_r1/sft_vlm_formula.py \
-    --model_name_or_path /fs-computility/ai4sData/shared/models/Qwen2.5-VL-7B-Instruct \
+    --model_name_or_path "your_model_path" \
     --deepspeed local_scripts/zero3.json \
     --dataset_name json \
-    --dataset_config /root/code/vlm_formula_all_data_5000.json \
+    --dataset_config "your_dataset_config" \
     --learning_rate 2.0e-5 \
     --num_train_epochs 5 \
     --packing \
@@ -27,8 +27,8 @@ torchrun --nproc_per_node="8" \
     --logging_steps 5 \
     --eval_strategy steps \
     --eval_steps 100 \
-    --output_dir /fs-computility/ai4sData/shared/vlrl/vlm_sci/weights/Qwen2.5-VL-7B-Instruct-model1-5000 \
+    --output_dir "your_output_dir" \
     --report_to wandb \
     --logging_dir /root/code/R1-V/src/r1-v/log/ \
-    --run_name "sft_stage1_qwenvl_cot_eq_7B_5000" \
+    --run_name "your_run_name" \
     --stage 1
