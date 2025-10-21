@@ -8,7 +8,7 @@
 [![Project Page](https://img.shields.io/badge/Project-Page-green)](https://jiaaqiliu.github.io/VIPER-R1/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-[**📄 Paper**](https://arxiv.org/abs/2508.17380) | [**🌐 Project Page**](https://jiaaqiliu.github.io/VIPER-R1/) | [**🤗 Dataset**](#-dataset) | [**💻 Code**](https://github.com/Jiaaqiliu/VIPER-R1)
+[**📄 Paper**](https://arxiv.org/abs/2508.17380) | [**🌐 Project Page**](https://jiaaqiliu.github.io/VIPER-R1/) | [**🤗 Dataset**](https://huggingface.co/JiaaqiLiu/VIPER-R1-RL) | [**💻 Code**](https://github.com/Jiaaqiliu/VIPER-R1)
 
 </div>
 
@@ -70,9 +70,9 @@ VIPER-R1 consists of three main stages:
 ## 🔜 Todo List
 
 - ✅ **📝 Paper Release**
-- [ ] **💻 Code Release**
+- ✅ **💻 Code Release**
 - [ ] **📊 Dataset Release**: PhysSymbol multimodal corpus
-- [ ] **🔧 Model Checkpoints**: Pre-trained VIPER-R1 weights
+- ✅ **🔧 Model Checkpoints**: Pre-trained VIPER-R1 weights
 
 <!-- ## 🎯 Quick Start
 
