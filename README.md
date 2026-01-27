@@ -22,20 +22,6 @@ The model is trained via a curriculum of Motion Structure Induction (MSI), using
 
 To support this research, we introduce PhysSymbol, a new 5,000-instance multimodal corpus. Experiments show that VIPER-R1 consistently outperforms state-of-the-art VLM baselines in accuracy and interpretability, enabling more precise discovery of physical laws.
 
-## 👥 Authors
-
-**Jiaqi Liu**¹'³, **Songning Lai**², **Pengze Li**³'⁴, **Di Yu**³'⁵, **Wenjie Zhou**⁶'⁹, **Yiyang Zhou**¹, **Peng Xia**¹, **Zijun Wang**⁷, **Xi Chen**⁴, **Shixiang Tang**⁸, **Lei Bai**³, **Wanli Ouyang**³'⁸, **Mingyu Ding**¹, **Huaxiu Yao**¹, **Aoran Wang**³
-
-¹ UNC-Chapel Hill  
-² The Hong Kong University of Science and Technology (Guangzhou)  
-³ Shanghai Artificial Intelligence Laboratory  
-⁴ Fudan University  
-⁵ Tsinghua University  
-⁶ Nankai University  
-⁷ UC Santa Cruz  
-⁸ The Chinese University of Hong Kong  
-⁹ Shanghai Innovation Institute  
-
 
 ## 🔥 Highlights
 
