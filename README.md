@@ -52,47 +52,6 @@ VIPER-R1 consists of three main stages:
 3. **Symbolic Residual Realignment (SR²)**: Agentic tool use for empirical-theoretical reconciliation
 
 
-
-## 🔜 Todo List
-
-- ✅ **📝 Paper Release**
-- ✅ **💻 Code Release**
-- [ ] **📊 Dataset Release**: PhysSymbol multimodal corpus
-- ✅ **🔧 Model Checkpoints**: Pre-trained VIPER-R1 weights
-
-<!-- ## 🎯 Quick Start
-
-### Installation
-```bash
-# Clone the repository
-git clone https://github.com/VIPER-R1/VIPER-R1.git
-cd VIPER-R1
-
-# Install dependencies (Coming Soon)
-pip install -r requirements.txt
-```
-
-### Training
-```bash
-# Stage 1: Motion Structure Induction
-python src/training/train_msi.py --config configs/msi_config.yaml
-
-# Stage 2: Reward-Guided Symbolic Calibration  
-python src/training/train_rgsc.py --config configs/rgsc_config.yaml
-
-# Stage 3: Full pipeline evaluation
-python src/inference/evaluate.py --model_path checkpoints/VIPER_r1.pt
-```
-
-### Inference
-```bash
-# Run physics formula discovery on new data
-python src/inference/discover.py \
-    --image_path examples/phase_portrait.png \
-    --trajectory_data examples/trajectory.csv \
-    --output_dir results/
-``` -->
-
 ## 📊 PhysSymbol Dataset
 
 The PhysSymbol dataset contains 5,000 multimodal instances for physics formula discovery:
